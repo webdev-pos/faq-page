@@ -1,0 +1,62 @@
+body {
+    margin: none;
+    padding: none;
+    background-color: rgb(199, 194, 194);
+}
+* {
+    margin: none;
+    padding: none;
+}
+.faq {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.faq h1 {
+    color: rgb(116, 7, 116);
+    font-weight: bold;
+}
+.questions {
+    color: rgb(116, 7, 116);
+    background-color: white;
+    height: 500px;
+    margin: auto;
+    width: 500px;
+    border: 1px solid white;
+    border-radius: 16px;
+}
+.button-question {
+    background-color: #eee;
+    color: rgb(116, 7, 116);
+    cursor: pointer;
+    padding: 42px;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    border: 1px solid #eee;
+    border-radius: 18px;
+}
+.active, .button-question:hover {
+    background-color: #ccc;
+}
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+.button-question:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
