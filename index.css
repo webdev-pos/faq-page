@@ -1,11 +1,11 @@
 body {
-    margin: none;
-    padding: none;
+    margin: 0;
+    padding: 0;
     background-color: rgb(199, 194, 194);
 }
 * {
-    margin: none;
-    padding: none;
+    margin: 0;
+    padding: 0;
 }
 .faq {
     text-align: center;
